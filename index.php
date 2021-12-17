@@ -2,9 +2,9 @@
 
 class Hero
 {
-    // proporitys
+    // properties
     public $name;
-    public $pharseOne;
+    public $phraseOne;
     public $phraseTwo;
     public $level = 0;
 
@@ -16,7 +16,7 @@ class Hero
     }
     function set_phraseOne($phrase)
     {
-        $this->pharseOne = $phrase;
+        $this->phraseOne = $phrase;
     }
     function set_phraseTwo($phrase)
     {
@@ -25,12 +25,12 @@ class Hero
     function set_Level($newLevel)
     {
         $this->level = $newLevel;
-        print_r($this->name. " has reached level ". $this->level);
+        print_r($this->name. "has reached level ". $this->level);
     }
     function speak($phraseNum)
     {
         if ($phraseNum == 1) {
-            print_r($this->pharseOne);
+            print_r($this->phraseOne);
         }
         if ($phraseNum == 2) {
             print_r($this->phraseTwo);
@@ -41,15 +41,17 @@ class Hero
 }
 
 $kungFuPanda = new Hero();
-$kungFuPanda->set_name("Kung Fu Panda");
-$kungFuPanda->set_phraseOne("Skadoosh");
-$kungFuPanda->set_phraseTwo("You have been blinded by pure awesomeness!");
+$kungFuPanda->set_name("Kung Fu Panda ");
+$kungFuPanda->set_phraseOne("Skadoosh ");
+$kungFuPanda->set_phraseTwo("You have been blinded by pure awesomeness! ");
 
 $spiderMan = new Hero();
-$spiderMan->set_name("SpiderMan");
-$spiderMan->set_phraseOne("My Spider-Sense is tingling!");
-$spiderMan->set_phraseTwo(" Your friendly neighbourhood spiderman!");
+$spiderMan->set_name("SpiderMan ");
+$spiderMan->set_phraseOne("My Spider-Sense is tingling! ");
+$spiderMan->set_phraseTwo(" Your friendly neighbourhood Spiderman! ");
 
 $kungFuPanda->speak(1);
 $spiderMan->set_level(69);
 $spiderMan->speak(2);
+
+?>
